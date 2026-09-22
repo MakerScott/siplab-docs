@@ -1,6 +1,6 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
-  title: SipLab
+  title: Siplab
   structure:
     - type: space
       key: how-it-works
