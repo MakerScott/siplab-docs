@@ -23,12 +23,12 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
     <tr>
       <td>Estimate nutrition</td>
       <td>Claude Sonnet</td>
-      <td>Same careful reasoning, with USDA-style references in the prompt. See [Nutrition](nutrition.md).</td>
+      <td>Same careful reasoning, with standard food references. See [Nutrition](nutrition.md).</td>
     </tr>
     <tr>
-      <td>Check the prompt</td>
+      <td>Check the idea</td>
       <td>GPT-4o mini</td>
-      <td>Fast and cheap. It only needs to decide if this is a drink.</td>
+      <td>Fast. It only needs to decide if this is a drink.</td>
     </tr>
     <tr>
       <td>Suggest ingredients</td>
@@ -38,12 +38,12 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
     <tr>
       <td>Review the recipe</td>
       <td>GPT-4o mini</td>
-      <td>A second pair of eyes, without spending another full recipe call.</td>
+      <td>A second pair of eyes, without writing the whole recipe again.</td>
     </tr>
     <tr>
       <td>Take the photo</td>
       <td>Gemini Flash Image</td>
-      <td>Good at still-life drink photos from a detailed prompt.</td>
+      <td>Good at still-life drink photos from a detailed description.</td>
     </tr>
     <tr>
       <td>Make a video</td>
@@ -75,39 +75,39 @@ Model IDs, as configured today:
   <tbody>
     <tr>
       <td>Write the recipe</td>
-      <td><code>anthropic/claude-sonnet-5</code></td>
+      <td>anthropic/claude-sonnet-5</td>
     </tr>
     <tr>
       <td>Estimate nutrition</td>
-      <td><code>anthropic/claude-sonnet-5</code></td>
+      <td>anthropic/claude-sonnet-5</td>
     </tr>
     <tr>
-      <td>Check the prompt</td>
-      <td><code>openai/gpt-4o-mini</code></td>
+      <td>Check the idea</td>
+      <td>openai/gpt-4o-mini</td>
     </tr>
     <tr>
       <td>Suggest ingredients</td>
-      <td><code>openai/gpt-4o-mini</code></td>
+      <td>openai/gpt-4o-mini</td>
     </tr>
     <tr>
       <td>Review the recipe</td>
-      <td><code>openai/gpt-4o-mini</code></td>
+      <td>openai/gpt-4o-mini</td>
     </tr>
     <tr>
       <td>Take the photo</td>
-      <td><code>google/gemini-3.1-flash-image</code></td>
+      <td>google/gemini-3.1-flash-image</td>
     </tr>
     <tr>
       <td>Make a video</td>
-      <td><code>bytedance/seedance-2.0</code></td>
+      <td>bytedance/seedance-2.0</td>
     </tr>
     <tr>
       <td>Read the recipe aloud</td>
-      <td><code>x-ai/grok-voice-tts-1.0</code></td>
+      <td>x-ai/grok-voice-tts-1.0</td>
     </tr>
     <tr>
       <td>Find similar drinks</td>
-      <td><code>openai/text-embedding-3-small</code></td>
+      <td>openai/text-embedding-3-small</td>
     </tr>
   </tbody>
 </table>

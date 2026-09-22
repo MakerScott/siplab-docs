@@ -4,7 +4,9 @@ icon: wand-magic-sparkles
 
 # Remix
 
-You do not have to start from a blank prompt. On a drink you can remix it into a new recipe of your own, or type a short request to make that recipe yours. The published original stays as it was.
+You do not have to start from a blank description. On a drink you can **Remix** it into a new recipe of your own, or type a short request under **make it yours**. The published original stays as it was.
+
+You need an account for both. If you are not signed in, we keep what you typed and send you to **Join Us**.
 
 <table data-search="false">
   <thead>
@@ -23,17 +25,17 @@ You do not have to start from a blank prompt. On a drink you can remix it into a
     <tr>
       <td>You give us</td>
       <td>An edited ingredient list, starting from theirs</td>
-      <td>A short request — less sweet, extra protein, dairy free</td>
+      <td>A short request, such as less sweet, extra protein, dairy free</td>
     </tr>
     <tr>
       <td>What we keep</td>
-      <td>Category and hot or cold, unless you change them</td>
+      <td>Category and hot or cold</td>
       <td>The same drink, except what the request asks to change</td>
     </tr>
     <tr>
       <td>What you get</td>
       <td>A new public drink under your name, with its own photo</td>
-      <td>A rewritten recipe in this view. It is not saved over theirs.</td>
+      <td>A rewritten recipe on this screen. It is not saved over theirs.</td>
     </tr>
     <tr>
       <td>Who can use it</td>
@@ -43,43 +45,41 @@ You do not have to start from a blank prompt. On a drink you can remix it into a
   </tbody>
 </table>
 
-You need an account for both. If you are not signed in, we keep what you typed and send you to join first.
-
-## Remix
-
+{% tabs %}
+{% tab title="Remix" %}
 Remix is a new drink. We start from this one, then run the same [path](README.md#from-idea-to-recipe) we use when you create from scratch.
 
 {% stepper %}
 {% step %}
 ### Start from their list
 
-Remix opens the create flow with this drink’s ingredients already filled in, plus the category and hot or cold. You can keep the list, add a line, drop one, or change an amount. “Edit the ingredients” is the whole job.
+**Remix** opens **Remix This Drink** with this drink’s ingredients already filled in, plus the category. The job is **Edit the ingredients**. You can keep the list, add a line, drop one, or change an amount.
 {% endstep %}
 
 {% step %}
 ### We check it is still a drink
 
-The same small model that guards a new idea reads your list. If the prompt is no longer a homemade drink, we stop before a full recipe call.
+The same small model that guards a new idea reads your list. If it is no longer a homemade drink, we stop before we write a full recipe.
 {% endstep %}
 
 {% step %}
 ### We write a new recipe
 
-The recipe model treats your edited list like any other create. It names the drink, writes steps, sizes the glass, and estimates [nutrition](nutrition.md). Code locks kitchen amounts, assigns tags, and a second model reviews it once.
+The recipe model treats your edited list like any other create. It names the drink, writes steps, sizes the glass, and estimates [nutrition](nutrition.md). We lock kitchen amounts, assign tags, and a second model reviews it once.
 
-The name has to be unique. This is not a copy with the same URL. It is a new drink you own.
+The name has to be unique. This is not a copy with the same page. It is a new drink you own.
 {% endstep %}
 
 {% step %}
 ### It goes live as yours
 
-The remix is public under your handle. A photo job starts. The drink you remixed is unchanged — same name, same recipe, same picture.
+The remix is public under your handle. A photo job starts. The drink you remixed is unchanged: same name, same recipe, same picture.
 {% endstep %}
 {% endstepper %}
+{% endtab %}
 
-## Make It Yours
-
-Make it yours is for a drink that is not already yours. You keep the recipe on screen and tell us how it should change.
+{% tab title="Make It Yours" %}
+**make it yours** is for a drink that is not already yours. You keep the recipe on screen and tell us how it should change. Owners do not see this field.
 
 {% stepper %}
 {% step %}
@@ -97,24 +97,26 @@ The model gets the current name, description, ingredients, amounts, steps, and g
 {% step %}
 ### Your request wins the amounts
 
-On a new create, amounts you typed stay put. Here the request is allowed to change them. If “less sweet” conflicts with two tablespoons of syrup, the syrup comes down. Vague add-ins such as “some marshmallows” stay a garnish — a tablespoon or two, not a cup.
+On a new create, amounts you typed stay put. Here the request is allowed to change them. If “less sweet” conflicts with two tablespoons of syrup, the syrup comes down. Vague add-ins such as “some marshmallows” stay a garnish: a tablespoon or two, not a cup.
 {% endstep %}
 
 {% step %}
 ### We estimate nutrition again
 
-The rewritten list gets a new panel. Coffee and tea caffeine is computed in code, the same way as on a new drink. We do not run the review model on this pass, and we do not paint a new photo. You are looking at a rewritten recipe, not a newly published one.
+The rewritten list gets a new panel. Coffee and tea caffeine is counted the same way as on a new drink. We do not paint a new photo. You are looking at a rewritten recipe, not a newly published one.
 {% endstep %}
 {% endstepper %}
 
-The original drink in the catalog is not overwritten. Refresh the page and theirs is still theirs. Remix if you want a public copy under your name.
+The original drink in the catalog is not overwritten. Refresh the page and theirs is still theirs. Use **Remix** if you want a public copy under your name.
+{% endtab %}
+{% endtabs %}
 
-## What the Model Is Not Allowed to Do
+## What We Will Not Do
 
 - Invent a different drink when you only asked for a tweak
-- Reverse the request — sweeter when you said less sweet
+- Reverse the request (sweeter when you said less sweet)
 - Ignore the current list and start over
 - Treat a handful of toppings like a main pour
 - Keep a name that no longer fits, if the request really changed the drink
 
-Ingredients stay in make order: coffee, tea, or espresso first; then water and milk; then produce; then sweeteners; then ice; then toppings last. On a smoothie, blender add-ins group by kind — liquids, yogurt, produce, syrups, powders, then seeds.
+Ingredients stay in make order: coffee, tea, or espresso first, then water and milk, then produce, then sweeteners, then ice, then toppings last. On a smoothie, blender add-ins group by kind: liquids, yogurt, produce, syrups, powders, then seeds.
