@@ -116,7 +116,7 @@ Every published drink has the same parts.
     </tr>
     <tr>
       <td>Photo</td>
-      <td>A still of the finished drink. Some drinks also get a short [video](video.md).</td>
+      <td>A still of the finished drink. See [Photos](photos.md). Some drinks also get a short [video](video.md).</td>
     </tr>
   </tbody>
 </table>
@@ -137,9 +137,7 @@ The recipe is public as soon as it is written. A few things keep happening.
 
 ### The Photo Shows Up Next
 
-A still life is painted from the finished recipe: the right unbranded glass, hot or cold, the liquid color those ingredients would actually mix, and only the garnish the method called for.
-
-The drink fills the frame. There are no people, logos, straws, or store bottles. Kitchen and leftover ingredients stay soft at the edges. Hot drinks stay in an opaque ceramic mug. Cold drinks stay in glass, not a mug with a handle. Some drinks also get a short [video](video.md) from this still.
+The overlay says **Building Drink** while we paint a still from the finished recipe. [Photos](photos.md) is the full path. Some drinks also get a short [video](video.md) from that still.
 
 ### Similar Drinks
 

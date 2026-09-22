@@ -4,5 +4,6 @@
 * [Nutrition](nutrition.md)
 * [Tags](tags.md)
 * [Remix](remix.md)
-* [Models](models.md)
+* [Photos](photos.md)
 * [Videos](video.md)
+* [Models](models.md)

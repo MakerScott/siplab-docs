@@ -4,7 +4,7 @@ icon: video
 
 # Videos
 
-Not every drink gets a video. When one does, it is built from the finished [photo](README.md#the-photo-shows-up-next) and the recipe, not filmed in a kitchen. [Seedance 2.0](models.md) turns the still into a short, phone-tall make.
+Not every drink gets a video. When one does, it is built from the finished [photo](photos.md) and the recipe, not filmed in a kitchen. [Seedance 2.0](models.md) turns the still into a short, phone-tall make.
 
 {% hint style="info" %}
 The recipe is already public before the clip exists. If there is no photo yet, we wait. Creating a drink starts the photo. A video is added only on some drinks.
