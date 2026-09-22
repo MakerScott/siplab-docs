@@ -1,3 +1,7 @@
+---
+icon: video
+---
+
 # Videos
 
 Not every drink gets a video. When one does, it is built from the finished [photo](README.md#the-photo-shows-up-next) and the recipe — not filmed in a kitchen. [Seedance 2.0](models.md) animates the still into a short, phone-tall make.

@@ -10,6 +10,8 @@ redirects:
   who-does-what: README.md
   what-a-recipe-includes: README.md
   amounts: README.md
-  nutrition: README.md
+  nutrition: nutrition.md
+  remix: remix.md
+  make-it-yours: remix.md
   after-it-goes-live: README.md
   how-a-video-is-made: video.md

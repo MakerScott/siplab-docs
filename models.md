@@ -1,3 +1,7 @@
+---
+icon: microchip
+---
+
 # Models
 
 No single model does everything. A stronger one writes the recipe. Smaller ones handle quick checks. Image, video, and voice models handle the rest.
@@ -19,7 +23,7 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
     <tr>
       <td>Estimate nutrition</td>
       <td>Claude Sonnet</td>
-      <td>Same careful reasoning, with USDA-style references in the prompt.</td>
+      <td>Same careful reasoning, with USDA-style references in the prompt. See [Nutrition](nutrition.md).</td>
     </tr>
     <tr>
       <td>Check the prompt</td>

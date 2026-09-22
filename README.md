@@ -1,6 +1,10 @@
+---
+icon: book-open
+---
+
 # How It Works
 
-You bring an idea. We write a recipe you can make at home — with kitchen amounts, steps, tags, nutrition, and a photo. The recipe is public as soon as it is written. The photo follows a moment later. Some drinks also get a short [video](video.md).
+You bring an idea. We write a recipe you can make at home — with kitchen amounts, steps, tags, nutrition, and a photo. The recipe is public as soon as it is written. The photo follows a moment later. Some drinks also get a short [video](video.md). You can [remix](remix.md) a drink you like, or type a short request to make it yours.
 
 The [models](models.md) that do each job are listed separately. This page is the path from your idea to a drink you can make.
 
@@ -42,7 +46,7 @@ Steps are put in a makeable order and checked so every ingredient is used. For b
 
 A model builds a Nutrition Facts panel for one serving from the locked ingredient list. We give it USDA-style anchors and the finished glass size, then ask it to use the listed amounts as recipe totals — not to invent a new pour.
 
-If servings is more than one, the panel is the totals divided by servings. Coffee and tea caffeine is also calculated in code. If the panel is incomplete or not sane, we try once more. This is an estimate, not a lab test, and not medical advice.
+If servings is more than one, the panel is the totals divided by servings. Coffee and tea caffeine is also calculated in code. If the panel is incomplete or not sane, we try once more. [Nutrition](nutrition.md) is the full path. This is an estimate, not a lab test, and not medical advice.
 {% endstep %}
 
 {% step %}
@@ -98,7 +102,7 @@ Every published drink has the same parts. Some are written by a model. Some are 
     </tr>
     <tr>
       <td>Nutrition</td>
-      <td>Estimated by a model, rounded the way a label would be. Caffeine for coffee and tea is also computed in code.</td>
+      <td>Estimated by a model, then rounded like a label. See [Nutrition](nutrition.md).</td>
     </tr>
     <tr>
       <td>Photo</td>
@@ -114,14 +118,6 @@ If you write “2 shots” or “1 cup oat milk,” we keep those amounts. After
 We only fill in amounts you left blank. A missing espresso or tea base can be added when the category needs one. Milk that was listed without a pour can be sized to the glass. We do not scale your teaspoons up for the camera or the photo, and we do not rewrite “2 shots” as a different volume because the model preferred a bigger drink.
 
 Glass size stays between 4 and 24 fl oz. If you asked for a size in that range, we use it. Servings snap to ½, 1, 2, or 3 so the recipe stays a home pour, not a batch.
-
-## Nutrition Is an Estimate
-
-Nutrition is not a lab test. We give the model USDA-style references, the locked ingredient list, the serving count, and the finished glass size. It estimates calories, macros, and the rest of a standard panel, then we round the way a label would.
-
-The amounts on the ingredient list are the full recipe. The panel is one serving. If you asked for two servings, the numbers are divided. For coffee and tea, caffeine is also computed in code from the recipe, not left entirely to the model.
-
-If the first panel is missing pieces or does not make sense next to the ingredients, we try once more. If it still fails, we do not invent a fake label. This is not medical advice.
 
 ## After It Goes Live
 
@@ -142,3 +138,7 @@ An embedding turns the recipe into a fingerprint — name, ingredients, steps, a
 The spoken script is written in code, not improvised by a model. It reads the name, the servings if you asked for more than one, each ingredient in spoken kitchen amounts, then each step.
 
 A voice reads it like a calm barista. There is a pause after the name, after each ingredient, and after each step, so you can measure while it talks.
+
+### Remix It
+
+If the drink is close but not quite, [remix](remix.md) it into a new recipe under your name, or make it yours with a short request. Theirs stays published as they wrote it.
