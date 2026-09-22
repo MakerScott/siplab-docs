@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: How it works
+  structure:
+    - type: space
+      key: how-it-works
+      title: How it works
+      path: how-it-works
+      default: true
+      content:
+        directory: ./
