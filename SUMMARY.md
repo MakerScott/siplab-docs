@@ -1,3 +1,5 @@
 # Table of contents
 
-* [How it works](README.md)
+* [How It Works](README.md)
+* [Models](models.md)
+* [Videos](video.md)

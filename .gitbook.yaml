@@ -6,10 +6,10 @@ structure:
 
 redirects:
   from-idea-to-recipe: README.md
-  the-models: README.md
+  the-models: models.md
   who-does-what: README.md
   what-a-recipe-includes: README.md
   amounts: README.md
   nutrition: README.md
   after-it-goes-live: README.md
-  how-a-video-is-made: README.md
+  how-a-video-is-made: video.md

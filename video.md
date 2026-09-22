@@ -1,0 +1,87 @@
+# Videos
+
+Not every drink gets a video. When one does, it is built from the finished [photo](README.md#the-photo-shows-up-next) and the recipe — not filmed in a kitchen. [Seedance 2.0](models.md) animates the still into a short, phone-tall make.
+
+{% hint style="info" %}
+The recipe is already public before the clip exists. If there is no photo yet, we wait.
+{% endhint %}
+
+```mermaid
+flowchart LR
+    Photo[Finished photo] --> List[Shot list from the recipe]
+    List --> Model[Seedance 2.0]
+    Model --> Clip[Phone-tall clip]
+    Clip --> Drink[Attached to the drink]
+```
+
+{% stepper %}
+{% step %}
+### Start from the photo
+
+The still image is the reference for the finished drink: same unbranded glass, liquid color, texture, and garnish. It is not the opening frame. The clip has to *make* that drink, then land on a living shot that matches the photo.
+{% endstep %}
+
+{% step %}
+### Write the shot list
+
+Code turns the recipe into a shot list before the model sees it. Every ingredient is listed in its measured kitchen amount. Every step is listed in order. The serving glass is named once and kept for the whole clip.
+
+Prep tools — a kettle, demitasse, frother, or blender — may start empty for their own step, then pour into the serving glass when the method says so. We do not invent extra glasses.
+{% endstep %}
+
+{% step %}
+### Pick a length
+
+Clips run about 10 to 15 seconds, phone-tall. A simple pour stays near 10 seconds. Extra steps add time. Extra ingredients add a little more. Dense recipes top out at 15 seconds. We use the whole window to walk through the method, then hold on the finished drink.
+{% endstep %}
+
+{% step %}
+### Match the author’s hands
+
+No faces, and no full person in frame. If hands or wrists appear, they are one adult pair for the whole clip. Skin tone and jewelry come from the creator’s profile. We do not lighten, darken, or switch people mid-clip.
+{% endstep %}
+
+{% step %}
+### Animate the still
+
+The first frame is the most satisfying physical moment from the method, already in motion — a pour, ice hitting glass, a shot pulling, fruit dropping into a blender. After that hook, the method continues in order.
+
+Each ingredient and tool enters only in the moment it is used, then leaves. There is no table spread, no lineup of bottles, and no branded packaging. Kitchenware is plain and unlabeled. Portions stay literal: two tablespoons is two spoonfuls, not a dumped jar.
+{% endstep %}
+
+{% step %}
+### Keep the glass continuous
+
+Once liquid is in the serving glass, it stays. Later add-ins — ice, syrup, cream, garnish — go into that same drink. We never cut to a second empty glass or jump from add-ins in an empty glass to a suddenly full one.
+{% endstep %}
+
+{% step %}
+### Add sound that matches the action
+
+Audio is close-up kitchen noise for whatever is on screen in that moment: a pour, a shot, a blender, a shaker. Sounds start and stop with the shot. Machines that are not in the recipe stay silent. There is no music, talking, or cafe bed under the later garnish.
+
+On the last seconds, only faint sound that matches the motion remains — steam, ice, or a quiet settle.
+{% endstep %}
+
+{% step %}
+### End on a living drink
+
+The last seconds keep moving. A hot drink keeps steam. A cold drink keeps condensation, ice, or a slow swirl. Never a freeze-frame, never a still photo. We save the finished clip on the drink so it can play on the recipe.
+{% endstep %}
+{% endstepper %}
+
+## What the camera is not allowed to do
+
+- Skip, merge, or invent ingredients or steps
+- Open on the finished drink, an empty still glass, or a counter of unused tools
+- Show faces, logos, captions, or store packaging
+- Scale a portion up for the camera
+- Film extra prep that the recipe did not write — grinding beans when the ingredient is already a paste, or toasting something that is only a flavor word in the name
+
+## Fruit and blender drinks
+
+If the method uses a blender and the ingredient is a whole fruit, we cut it first. Fruit that needs a peel is peeled, then cut into chunks on the board. Only those pieces go into the blender — never a whole fruit, peel on.
+
+## After it is attached
+
+The clip lives on the drink. You can play it on the recipe. If you own the drink, you can ask us to make the video again from the same photo and recipe.

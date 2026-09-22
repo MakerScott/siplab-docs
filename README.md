@@ -1,141 +1,144 @@
-# How it works
+# How It Works
 
-You bring an idea. We write a recipe you can make at home — with kitchen amounts, steps, tags, nutrition, and a photo. Here is exactly how that happens, and which models do which jobs.
+You bring an idea. We write a recipe you can make at home — with kitchen amounts, steps, tags, nutrition, and a photo. The recipe is public as soon as it is written. The photo follows a moment later. Some drinks also get a short [video](video.md).
 
-## From idea to recipe
+The [models](models.md) that do each job are listed separately. This page is the path from your idea to a drink you can make.
 
-A drink is published as soon as the recipe is ready. The photo follows a moment later.
+## From Idea to Recipe
 
-1. **You describe the drink**\
-   Name a category, list ingredients, write a vibe, or mix all three. “Oat milk latte with maple” is enough.
-2. **We check it is a drink**\
-   A small model reads the prompt and turns away anything that is not a beverage.
-3. **We write the recipe**\
-   A model names it, lists ingredients with kitchen amounts, picks a glass size, and writes the steps.
-4. **Code does the kitchen work**\
-   We lock the amounts you typed, add a missing espresso or tea base, size the glass (4–24 fl oz), and put the steps in a makeable order.
-5. **We estimate nutrition**\
-   A model adds calories, macros, and the rest of the panel. Coffee and tea caffeine is checked again in code.
-6. **A second model reviews it**\
-   A second model looks for real problems. If something is off, we rewrite the recipe once and keep the result.
-7. **It goes live**\
-   The drink is live with a unique name. Tags, an embedding for similar drinks, and the photo job start right away.
+{% stepper %}
+{% step %}
+### You describe the drink
 
-## The models
+Name a category, list ingredients, write a vibe, or mix all three. “Oat milk latte with maple” is enough. You can also pick hot or cold and start typing ingredients one at a time — we will suggest the next one while you build.
 
-No single model does everything. A stronger one writes the recipe. Smaller ones handle quick checks. Image, video, and voice models handle the rest.
+You do not have to specify every amount. If you do write amounts, we keep them later. If you only write a feeling, the recipe model fills in the kitchen work.
+{% endstep %}
 
-| Job | Model | Why this one |
-| --- | --- | --- |
-| Write the recipe | Claude Sonnet | Strong at turning a loose idea into a complete, structured recipe. |
-| Estimate nutrition | Claude Sonnet | Same careful reasoning, with USDA-style references in the prompt. |
-| Check the prompt | GPT-4o mini | Fast and cheap. It only needs to decide if this is a drink. |
-| Suggest ingredients | GPT-4o mini | Quick ideas while you are still building the drink. |
-| Review the recipe | GPT-4o mini | A second pair of eyes, without spending another full recipe call. |
-| Take the photo | Gemini Flash Image | Good at still-life drink photos from a detailed prompt. |
-| Make a video | Seedance 2.0 | Turns the finished photo into a short pour video. |
-| Read the recipe aloud | Grok Voice | Calm barista pacing, with pauses built into the script. |
-| Find similar drinks | text-embedding-3-small | Turns a recipe into a fingerprint we can compare. |
+{% step %}
+### We check it is a drink
 
-Model IDs, as configured today:
+A small model reads the prompt, the category, and any ingredient list. It only answers one question: is this a homemade drink? Anything that is not a beverage is turned away before we spend a full recipe call.
+{% endstep %}
 
-| Job | ID |
-| --- | --- |
-| Write the recipe | `anthropic/claude-sonnet-5` |
-| Estimate nutrition | `anthropic/claude-sonnet-5` |
-| Check the prompt | `openai/gpt-4o-mini` |
-| Suggest ingredients | `openai/gpt-4o-mini` |
-| Review the recipe | `openai/gpt-4o-mini` |
-| Take the photo | `google/gemini-3.1-flash-image` |
-| Make a video | `bytedance/seedance-2.0` |
-| Read the recipe aloud | `x-ai/grok-voice-tts-1.0` |
-| Find similar drinks | `openai/text-embedding-3-small` |
+{% step %}
+### We write the recipe
 
-We may swap models as better ones show up. This is what we use today.
+A stronger model names the drink, writes a short description, lists ingredients in kitchen units, picks a glass size, and writes the steps. It infers equipment from the method — blender, kettle, espresso machine — and drafts a nutrition panel.
 
-## Who does what
+The name has to be unique on Siplab. If that name is already taken, we adjust the slug so the drink still has its own URL.
+{% endstep %}
 
-AI drafts. Code keeps the kitchen honest. You stay in charge of the idea.
+{% step %}
+### Code does the kitchen work
 
-### You
+After the draft, our code reads the recipe again. It locks the amounts you typed, adds a missing espresso or tea base when the category needs one, sizes the glass between 4 and 24 fl oz, and snaps servings to ½, 1, 2, or 3.
 
-* Pick a category and hot or cold
-* List ingredients or write a short prompt
-* Save, remix, or rewrite a drink you own
+Steps are put in a makeable order and checked so every ingredient is used. For blender drinks, whole fruit is cut — and peeled when it needs it — before it goes in. Milk pours are sized to the glass when the model left them vague. Tags are assigned by rules, not by the model: vegan, dairy-free, low sugar, seasonal, and similar.
+{% endstep %}
 
-### AI
+{% step %}
+### We estimate nutrition
 
-* Write the name, ingredients, and steps
-* Estimate the nutrition panel
-* Suggest the next ingredient while you type
-* Review the finished recipe once
-* Generate the photo, video, and voice
+A model builds a Nutrition Facts panel for one serving from the locked ingredient list. We give it USDA-style anchors and the finished glass size, then ask it to use the listed amounts as recipe totals — not to invent a new pour.
 
-### Our code
+If servings is more than one, the panel is the totals divided by servings. Coffee and tea caffeine is also calculated in code. If the panel is incomplete or not sane, we try once more. This is an estimate, not a lab test, and not medical advice.
+{% endstep %}
 
-* Keep the amounts you typed
-* Size the glass and add a missing coffee or tea base
-* Assign tags and round nutrition
-* Publish the drink and find similar ones
+{% step %}
+### A second model reviews it
 
-## What a recipe includes
+A smaller model looks for real problems: missing steps, leftover ingredients, a glass that cannot hold the pour, or a method that would not work at home. If something is off, it writes a short edit brief and we regenerate the recipe once.
 
-Every published drink has the same parts. Some are written by a model. Some are decided by code.
+We do not loop. If the second attempt is still imperfect, we keep that attempt and publish. The review step is a second pair of eyes, not a veto that can stall the drink forever.
+{% endstep %}
 
-| On the drink | How it is made |
-| --- | --- |
-| Name and description | The model drafts these. We tidy repeated words in the name and keep the description short. |
-| Ingredients | Kitchen units — cups, shots, tablespoons — not raw grams unless that is how you buy it. Your listed amounts win. |
-| Steps | Written by the model, then reordered and filled in so every ingredient is used. |
-| Servings and size | Servings snap to ½, 1, 2, or 3. Glass size stays between 4 and 24 fl oz. |
-| Equipment | Inferred from the method: blender, kettle, espresso machine, and so on. |
-| Tags | Assigned by rules, not a model — vegan, dairy-free, low sugar, seasonal, and similar. |
-| Nutrition | Estimated by a model, rounded the way a label would be. Caffeine for coffee and tea is also computed in code. |
-| Photo | Generated after the recipe is already public. Some catalog drinks also get a short video from the photo. |
+{% step %}
+### It goes live
 
-## Amounts you write stay put
+The drink is public with a unique name. An embedding job starts so we can find similar drinks. If a photo was requested, that job starts too. The recipe does not wait on the picture.
+{% endstep %}
+{% endstepper %}
+
+## What a Recipe Includes
+
+Every published drink has the same parts. Some are written by a model. Some are decided by code. The table is the map. The sections below are the parts that need more than a line.
+
+<table data-search="false">
+  <thead>
+    <tr>
+      <th>On the drink</th>
+      <th>How it is made</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name and description</td>
+      <td>The model drafts these. We tidy repeated words in the name and keep the description short.</td>
+    </tr>
+    <tr>
+      <td>Ingredients</td>
+      <td>Kitchen units — cups, shots, tablespoons — not raw grams unless that is how you buy it. Your listed amounts win.</td>
+    </tr>
+    <tr>
+      <td>Steps</td>
+      <td>Written by the model, then reordered and filled in so every ingredient is used.</td>
+    </tr>
+    <tr>
+      <td>Servings and size</td>
+      <td>Servings snap to ½, 1, 2, or 3. Glass size stays between 4 and 24 fl oz.</td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>Inferred from the method: blender, kettle, espresso machine, and so on.</td>
+    </tr>
+    <tr>
+      <td>Tags</td>
+      <td>Assigned by rules, not a model — vegan, dairy-free, low sugar, seasonal, and similar.</td>
+    </tr>
+    <tr>
+      <td>Nutrition</td>
+      <td>Estimated by a model, rounded the way a label would be. Caffeine for coffee and tea is also computed in code.</td>
+    </tr>
+    <tr>
+      <td>Photo</td>
+      <td>Generated after the recipe is already public. Some drinks also get a short [video](video.md) from the photo.</td>
+    </tr>
+  </tbody>
+</table>
+
+## Amounts You Write Stay Put
 
 If you write “2 shots” or “1 cup oat milk,” we keep those amounts. After the model drafts the recipe, our code reads your lines again and puts your numbers back. The model does not get the last word.
 
-## Nutrition is an estimate
+We only fill in amounts you left blank. A missing espresso or tea base can be added when the category needs one. Milk that was listed without a pour can be sized to the glass. We do not scale your teaspoons up for the camera or the photo, and we do not rewrite “2 shots” as a different volume because the model preferred a bigger drink.
 
-Nutrition is an estimate, not a lab test. We give the model USDA-style anchors, then check that the panel is complete and sane. For coffee and tea, caffeine is also calculated in code. This is not medical advice.
+Glass size stays between 4 and 24 fl oz. If you asked for a size in that range, we use it. Servings snap to ½, 1, 2, or 3 so the recipe stays a home pour, not a batch.
 
-## After it goes live
+## Nutrition Is an Estimate
+
+Nutrition is not a lab test. We give the model USDA-style references, the locked ingredient list, the serving count, and the finished glass size. It estimates calories, macros, and the rest of a standard panel, then we round the way a label would.
+
+The amounts on the ingredient list are the full recipe. The panel is one serving. If you asked for two servings, the numbers are divided. For coffee and tea, caffeine is also computed in code from the recipe, not left entirely to the model.
+
+If the first panel is missing pieces or does not make sense next to the ingredients, we try once more. If it still fails, we do not invent a fake label. This is not medical advice.
+
+## After It Goes Live
 
 The recipe is public as soon as it is written. A few things keep happening in the background.
 
-### The photo shows up next
+### The Photo Shows Up Next
 
-A still life is painted from a long list of rules: the right glass, hot or cold, no logos, garnish that matches the drink.
+A still life is painted from the finished recipe: the right unbranded glass, hot or cold, the liquid color those ingredients would actually mix, and only the garnish the method called for.
 
-### Similar drinks
+The drink fills the frame. There are no people, logos, straws, or store bottles. Kitchen and leftover ingredients stay soft at the edges. Hot drinks stay in an opaque ceramic mug. Cold drinks stay in glass — not a mug with a handle. Some drinks also get a short [video](video.md) from this still.
 
-An embedding turns the recipe into a fingerprint. We only compare drinks in the same category and the same hot or cold.
+### Similar Drinks
 
-### Listen to it
+An embedding turns the recipe into a fingerprint — name, ingredients, steps, and tags, not the photo. We only compare drinks in the same category and the same hot or cold, then keep the closest matches. A latte is not ranked against a juice.
 
-The spoken script is written in code, then a voice reads it like a calm barista, with pauses after the name, each ingredient, and each step.
+### Listen to It
 
-### Make it yours
+The spoken script is written in code, not improvised by a model. It reads the name, the servings if you asked for more than one, each ingredient in spoken kitchen amounts, then each step.
 
-Remix is a preview. It skips the review step and does not save until you publish a new drink.
-
-## How a video is made
-
-Not every drink gets a video. When one does, it is built from the finished photo and the recipe — not filmed in a kitchen.
-
-1. **Start from the photo**\
-   The still image is the first frame. If there is no photo yet, we wait.
-2. **Write the shot list**\
-   Code turns the recipe into a shot list: every ingredient in its measured amount, every step in order, the same glass from the first pour to the last garnish.
-3. **Match the author’s hands**\
-   If hands appear, they match the creator’s skin tone and jewelry from their profile. No faces, and no switching people mid-clip.
-4. **Pick a length**\
-   Clips run about 10 to 15 seconds, phone-tall. More steps or ingredients get a little more time.
-5. **Animate the still**\
-   A video model animates the photo into a short make. Sound is close-up kitchen noise for the action on screen — a pour, a shot, a blender — then it stops. No music, no talking.
-6. **Keep the glass continuous**\
-   Once liquid is in the glass, it stays. Later add-ins go into that same drink. The last seconds keep moving: steam, ice, or a quiet settle — never a freeze-frame.
-7. **Attach the clip**\
-   We save the finished clip on the drink so it can play on the recipe.
+A voice reads it like a calm barista. There is a pause after the name, after each ingredient, and after each step, so you can measure while it talks.
