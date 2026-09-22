@@ -108,7 +108,7 @@ Every published drink has the same parts.
     </tr>
     <tr>
       <td>Tags</td>
-      <td>Labels such as Vegan, Dairy Free, Low Sugar, and High Protein.</td>
+      <td>Assigned from the recipe and the panel. See [Tags](tags.md).</td>
     </tr>
     <tr>
       <td>Nutrition</td>

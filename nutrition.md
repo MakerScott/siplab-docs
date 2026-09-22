@@ -190,11 +190,6 @@ We round after the estimate, not before. Small amounts can become zero on the la
 
 ## Tags That Read the Panel
 
-Some tags come from these numbers. We skip them when the panel is empty, so a missing estimate does not mark a drink Low Calorie.
+High Protein, Low Sugar, Low Calorie, and Caffeine Free are assigned from this panel. We skip them when the panel is empty, so a missing estimate does not mark a drink Low Calorie.
 
-- **High Protein**: 15 g of protein or more in a serving
-- **Low Sugar**: 8 g of total sugars or less
-- **Low Calorie**: about 10 calories per fluid ounce of glass size
-- **Caffeine Free**: caffeine on the panel and from the ingredient list are both 0
-
-Vegan, Dairy Free, Gluten Free, and Nut Free still come from the ingredient list.
+The full list, including diet chips from the ingredient list, is on [Tags](tags.md).

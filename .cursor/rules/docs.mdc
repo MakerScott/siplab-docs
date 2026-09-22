@@ -26,11 +26,12 @@ This site explains how that path works. It is not an in-app help center and it i
 Current pages:
 - **How It Works** (`README.md`) — the path from idea to a drink you can make
 - **Nutrition** (`nutrition.md`) — how the panel is built and what it means
+- **Tags** (`tags.md`) — how chips are assigned and how you filter with them
 - **Remix** (`remix.md`) — Remix vs Make it yours
 - **Models** (`models.md`) — which model does each job
 - **Videos** (`video.md`) — how a clip is made, and when a drink does not get one
 
-Put model names and IDs on **Models**. Link there instead of repeating the table. Put nutrition math on **Nutrition**. Put remix flows on **Remix**. Put video constraints on **Videos**.
+Put model names and IDs on **Models**. Link there instead of repeating the table. Put nutrition math on **Nutrition**. Put tag rules on **Tags**. Put remix flows on **Remix**. Put video constraints on **Videos**.
 
 ## Before Writing Any Doc
 1. Read the relevant Vue components in ../siplab-app/src to understand the UI and user flows
