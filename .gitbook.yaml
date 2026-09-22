@@ -3,3 +3,13 @@ root: ./
 structure:
   readme: README.md
   summary: SUMMARY.md
+
+redirects:
+  from-idea-to-recipe: README.md
+  the-models: README.md
+  who-does-what: README.md
+  what-a-recipe-includes: README.md
+  amounts: README.md
+  nutrition: README.md
+  after-it-goes-live: README.md
+  how-a-video-is-made: README.md

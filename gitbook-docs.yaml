@@ -1,11 +1,11 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
-  title: How it works
+  title: SipLab
   structure:
     - type: space
       key: how-it-works
-      title: How it works
-      path: how-it-works
+      title: SipLab
+      path: docs
       default: true
       content:
         directory: ./
