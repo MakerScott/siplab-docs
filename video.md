@@ -6,14 +6,6 @@ Not every drink gets a video. When one does, it is built from the finished [phot
 The recipe is already public before the clip exists. If there is no photo yet, we wait.
 {% endhint %}
 
-```mermaid
-flowchart LR
-    Photo[Finished photo] --> List[Shot list from the recipe]
-    List --> Model[Seedance 2.0]
-    Model --> Clip[Phone-tall clip]
-    Clip --> Drink[Attached to the drink]
-```
-
 {% stepper %}
 {% step %}
 ### Start from the photo
