@@ -53,13 +53,13 @@ Remix is a new drink. We start from this one, then run the same [path](README.md
 {% step %}
 ### Start from their list
 
-**Remix** opens **Remix This Drink** with this drink’s ingredients already filled in, plus the category. The job is **Edit the ingredients**. You can keep the list, add a line, drop one, or change an amount.
+**Remix** opens **Remix This Drink** with this drink’s ingredients already filled in, plus the category. The job is **Edit the ingredients**. You can keep the list, add a line, drop one, or change an amount. **Try adding** chips suggest the next ingredient here the same way they do on create. [Suggestions](suggestions.md) covers those chips.
 {% endstep %}
 
 {% step %}
 ### We check it is still a drink
 
-[Jev](models.md) reads your list the same way it guards a new idea. If it is no longer a homemade drink, we stop before we write a full recipe.
+A [model](models.md) reads your list the same way it guards a new idea. If it is no longer a homemade drink, we stop before we write a full recipe.
 {% endstep %}
 
 {% step %}

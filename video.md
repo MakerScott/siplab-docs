@@ -4,7 +4,7 @@ icon: video
 
 # Videos
 
-Not every drink gets a video. When one does, it is built from the finished [photo](photos.md) and the recipe, not filmed in a kitchen. [Seedance 2.0](models.md) turns the still into a short, phone-tall make.
+Not every drink gets a video. When one does, it is built from the finished [photo](photos.md) and the recipe, not filmed in a kitchen. A [model](models.md) turns the still into a short, phone-tall make.
 
 {% hint style="info" %}
 The recipe is already public before the clip exists. If there is no photo yet, we wait. Creating a drink starts the photo. A video is added only on some drinks.
@@ -28,7 +28,7 @@ Prep tools (a kettle, demitasse, frother, or blender) may start empty for their 
 {% step %}
 ### Pick a Length
 
-Clips run about 10 to 15 seconds, phone-tall. A simple pour stays near 10 seconds. Extra steps add time. Extra ingredients add a little more. Dense recipes top out at 15 seconds. We use the whole window to walk through the method, then hold on the finished drink.
+Clips run about 10 to 16 seconds, phone-tall. A simple pour stays near 10 seconds. Extra steps add time. Extra ingredients add a little more. Dense recipes top out at 16 seconds. We use the whole window to walk through the method, then hold on the finished drink.
 {% endstep %}
 
 {% step %}

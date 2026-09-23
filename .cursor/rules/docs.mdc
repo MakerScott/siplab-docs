@@ -25,6 +25,7 @@ This site explains how that path works. It is not an in-app help center and it i
 
 Current pages:
 - **How It Works** (`README.md`) — the path from idea to a drink you can make
+- **Suggestions** (`suggestions.md`) — how Try adding chips work in Create and Remix
 - **Nutrition** (`nutrition.md`) — how the panel is built and what it means
 - **Tags** (`tags.md`) — how chips are assigned and how you filter with them
 - **Remix** (`remix.md`) — Remix vs Make it yours
@@ -32,7 +33,7 @@ Current pages:
 - **Videos** (`video.md`) — how a clip is made, and when a drink does not get one
 - **Models** (`models.md`) — which model does each job
 
-Put model names and IDs on **Models**. Link there instead of repeating the table. Put nutrition math on **Nutrition**. Put tag rules on **Tags**. Put remix flows on **Remix**. Put photo rules on **Photos**. Put video constraints on **Videos**.
+Put model names and IDs on **Models**. Link there instead of repeating the table. Put suggestion chip rules on **Suggestions**. Put nutrition math on **Nutrition**. Put tag rules on **Tags**. Put remix flows on **Remix**. Put photo rules on **Photos**. Put video constraints on **Videos**.
 
 ## Before Writing Any Doc
 1. Read the relevant Vue components in ../siplab-app/src to understand the UI and user flows
@@ -146,7 +147,7 @@ Do not add a "What it does" / "How to use it" / "What to expect" / "Tips" skelet
 ## Style Rules
 - Use second person ("you") to address the user directly
 - Write for a non-technical audience. No code, no jargon, no mention of APIs, components, or endpoints.
-- Model names (Claude Sonnet, Seedance 2.0) are fine. Provider IDs and API slugs belong only on **Models**.
+- Model names and provider IDs belong only on **Models**. On every other page, link to that page instead of naming the model.
 - Use plain, friendly language ("Click Remix to start from their ingredient list" not "Submit the modify payload")
 - Capitalize UI labels exactly as they appear in the product ("Click Remix", not "click remix")
 - Use numbered lists for steps, bullet points for options or tips

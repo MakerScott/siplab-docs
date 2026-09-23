@@ -4,7 +4,7 @@ icon: image
 
 # Photos
 
-Every new drink gets a still of the finished pour. [Gemini Flash Image](models.md) paints it from the recipe, not from a camera in a kitchen. The recipe is already public while the overlay says **Building Drink**.
+Every new drink gets a still of the finished pour. A [model](models.md) paints it from the recipe, not from a camera in a kitchen. The recipe is already public while the overlay says **Building Drink**.
 
 {% hint style="info" %}
 The picture is a catalog still, about 4:3. A [video](video.md), when one exists, is a separate phone-tall clip made from this photo.

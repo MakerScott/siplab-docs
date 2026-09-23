@@ -4,7 +4,7 @@ icon: book-open
 
 # How It Works
 
-You describe a drink. We write a recipe you can make at home, with kitchen amounts, steps, tags, [nutrition](nutrition.md), and a photo. The recipe is public as soon as it is written. The photo shows up a moment later. Some drinks also get a short [video](video.md).
+You describe a drink. We write a recipe you can make at home, with kitchen amounts, steps, tags, [nutrition](nutrition.md), and a [photo](photos.md). The recipe is public as soon as it is written. The photo shows up a moment later. Some drinks also get a short [video](video.md).
 
 This page is the path from your idea to a drink you can make. The [models](models.md) that do each job are listed separately.
 
@@ -12,7 +12,7 @@ This page is the path from your idea to a drink you can make. The [models](model
 
 Click **Create**. Pick a category: Hot Coffee, Iced Coffee, Hot Tea, Iced Tea, Juice, or Smoothie. Then write in **Describe your drink**. “Oat milk latte with maple” is enough.
 
-While you type, **Try adding** chips suggest the next ingredient. Tap one to drop it into your description. You can also write amounts yourself. If you do, we keep them.
+While you type, **Try adding** chips suggest the next ingredient. Tap one to drop it into your description. [Suggestions](suggestions.md) is how those chips are chosen, including a fresh set and your dietary preferences. You can also write amounts yourself. If you do, we keep them.
 
 Click **Create**. If you are not signed in, we keep what you typed and send you to **Join Us**. After you join, we pick the recipe back up.
 
@@ -32,7 +32,7 @@ Name a category, list ingredients, write a vibe, or mix all three. You do not ha
 {% step %}
 ### We check it is a drink
 
-[Jev](models.md) reads what you wrote and the category you picked. It only answers one question: is this a homemade drink? Anything else is turned away before we write a full recipe.
+We read what you wrote and the category you picked. We only answer one question: is this a homemade drink? Anything else is turned away before we write a full recipe.
 {% endstep %}
 
 {% step %}

@@ -4,7 +4,7 @@ icon: apple-whole
 
 # Nutrition
 
-The panel on a drink is an estimate for one serving, built after the ingredient amounts are locked. It is not a lab test, and it is not medical advice. [Claude Sonnet](models.md) writes the numbers. We check them, round them the way a label would, and set coffee and tea caffeine from the ingredient list.
+The panel on a drink is an estimate for one serving, built after the ingredient amounts are locked. It is not a lab test, and it is not medical advice. A [model](models.md) writes the numbers. We check them, round them the way a label would, and set coffee and tea caffeine from the ingredient list.
 
 {% hint style="warning" %}
 Check the ingredient list for allergens. Use your own judgment before you make or drink anything.
