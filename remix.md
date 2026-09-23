@@ -59,7 +59,7 @@ Remix is a new drink. We start from this one, then run the same [path](README.md
 {% step %}
 ### We check it is still a drink
 
-The same small model that guards a new idea reads your list. If it is no longer a homemade drink, we stop before we write a full recipe.
+[Jev](models.md) reads your list the same way it guards a new idea. If it is no longer a homemade drink, we stop before we write a full recipe.
 {% endstep %}
 
 {% step %}

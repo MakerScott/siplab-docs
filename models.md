@@ -27,8 +27,8 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
     </tr>
     <tr>
       <td>Check the idea</td>
-      <td>GPT-4o mini</td>
-      <td>Fast. It only needs to decide if this is a drink.</td>
+      <td>Jev</td>
+      <td>A yes or no, with a probability. It does not write a recipe.</td>
     </tr>
     <tr>
       <td>Suggest ingredients</td>
@@ -83,7 +83,7 @@ Model IDs, as configured today:
     </tr>
     <tr>
       <td>Check the idea</td>
-      <td>openai/gpt-4o-mini</td>
+      <td>typesafe/jev-1.13</td>
     </tr>
     <tr>
       <td>Suggest ingredients</td>

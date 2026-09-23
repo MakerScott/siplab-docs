@@ -32,7 +32,7 @@ Name a category, list ingredients, write a vibe, or mix all three. You do not ha
 {% step %}
 ### We check it is a drink
 
-A small model reads what you wrote and the category you picked. It only answers one question: is this a homemade drink? Anything else is turned away before we write a full recipe.
+[Jev](models.md) reads what you wrote and the category you picked. It only answers one question: is this a homemade drink? Anything else is turned away before we write a full recipe.
 {% endstep %}
 
 {% step %}
