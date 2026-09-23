@@ -24,7 +24,7 @@ Tags wait on the locked ingredient list and the nutrition panel. A missing panel
 {% step %}
 ### We read the list and the panel
 
-Lifestyle tags come from what is in the glass and what the panel says. Vegan, Dairy Free, Gluten Free, and Nut Free come from ingredients. High Protein, Low Sugar, Low Calorie, and Caffeine Free come from the numbers. See [Nutrition](nutrition.md) for how those numbers are built.
+Lifestyle tags come from what is in the glass and what the panel says. Vegan, Dairy Free, Gluten Free, Nut Free, and Caffeine Free come from ingredients. High Protein, Low Calorie, and Low Sugar come from the panel, so they can appear a moment after the drink is on screen. See [Nutrition](nutrition.md) for how those numbers are built.
 {% endstep %}
 
 {% step %}
@@ -36,7 +36,7 @@ Benefits and seasons come from ingredients plus the words on the drink. If you a
 {% step %}
 ### The chips show on the drink
 
-The recipe goes live with its tags. Some diet chips stay hidden until you set **Dietary Preferences** on your profile. Filtering still uses the tags we assigned, even when a chip is hidden on the card.
+The recipe goes live with its ingredient tags. High Protein, Low Calorie, and Low Sugar follow with the nutrition panel. Some diet chips stay hidden until you set **Dietary Preferences** on your profile. Filtering still uses the tags we assigned, even when a chip is hidden on the card.
 {% endstep %}
 {% endstepper %}
 

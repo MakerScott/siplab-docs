@@ -48,29 +48,21 @@ The name has to be unique on Siplab. If that name is already taken, we still giv
 
 After the draft, we lock the amounts you typed, add a missing espresso or tea base when the category needs one, size the glass between 4 and 24 fl oz, and snap servings to ½, 1, 2, or 3.
 
-Steps are put in a makeable order so every ingredient is used. For blender drinks, whole fruit is cut, and peeled when it needs it, before it goes in. Milk pours are sized to the glass when you left them vague. Tags such as Vegan, Dairy Free, and Low Sugar come from the finished recipe, not from a guess.
-{% endstep %}
-
-{% step %}
-### We estimate nutrition
-
-A model builds a Nutrition Facts panel for one serving from the locked ingredient list. If servings is more than one, the panel is the totals divided by servings. Coffee and tea caffeine is counted from the list. If the panel is incomplete, we try once more.
-
-[Nutrition](nutrition.md) is the full path. This is an estimate, not a lab test, and not medical advice.
-{% endstep %}
-
-{% step %}
-### A second model reviews it
-
-A smaller model looks for real problems: missing steps, leftover ingredients, a glass that cannot hold the pour, or a method that would not work at home. If something is off, we write the recipe once more.
-
-We do not keep rewriting. If the second attempt is still imperfect, we keep that attempt and publish.
+Steps are put in a makeable order so every ingredient is used. For blender drinks, whole fruit is cut, and peeled when it needs it, before it goes in. Milk pours are sized to the glass when you left them vague. Vegan, Dairy Free, Gluten Free, Nut Free, and Caffeine Free come from that list. High Protein, Low Calorie, and Low Sugar wait for the nutrition panel.
 {% endstep %}
 
 {% step %}
 ### It goes live
 
-The drink is public with a unique name. You land on the recipe while the photo is still **Building Drink**. The recipe does not wait on the picture.
+The drink is public with a unique name. You land on the recipe while nutrition is still being estimated and the photo is still **Building Drink**. The recipe does not wait on either one.
+{% endstep %}
+
+{% step %}
+### We estimate nutrition
+
+A model builds a Nutrition Facts panel for one serving from the locked ingredient list. The nutrition area shows an alert until that panel arrives. High Protein, Low Calorie, and Low Sugar show up with it. If servings is more than one, the panel is the totals divided by servings. Coffee and tea caffeine is counted from the list. If the panel is incomplete, we try once more.
+
+[Nutrition](nutrition.md) is the full path. This is an estimate, not a lab test, and not medical advice.
 {% endstep %}
 {% endstepper %}
 

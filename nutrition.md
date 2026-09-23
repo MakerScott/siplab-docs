@@ -4,7 +4,7 @@ icon: apple-whole
 
 # Nutrition
 
-The panel on a drink is an estimate for one serving, built after the ingredient amounts are locked. It is not a lab test, and it is not medical advice. A [model](models.md) writes the numbers. We check them, round them the way a label would, and set coffee and tea caffeine from the ingredient list.
+The panel on a drink is an estimate for one serving, built after the ingredient amounts are locked. The recipe is already on the page while this panel is built. The nutrition area shows an alert until the numbers arrive. It is not a lab test, and it is not medical advice. A [model](models.md) writes the numbers. We check them, round them the way a label would, and set coffee and tea caffeine from the ingredient list.
 
 {% hint style="warning" %}
 Check the ingredient list for allergens. Use your own judgment before you make or drink anything.
@@ -190,6 +190,6 @@ We round after the estimate, not before. Small amounts can become zero on the la
 
 ## Tags That Read the Panel
 
-High Protein, Low Sugar, Low Calorie, and Caffeine Free are assigned from this panel. We skip them when the panel is empty, so a missing estimate does not mark a drink Low Calorie.
+High Protein, Low Calorie, and Low Sugar are assigned from this panel, and they show up when the panel does. We skip them when the panel is empty, so a missing estimate does not mark a drink Low Calorie. Caffeine Free can come from the ingredient list before the panel is ready.
 
 The full list, including diet chips from the ingredient list, is on [Tags](tags.md).

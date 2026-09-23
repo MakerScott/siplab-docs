@@ -65,7 +65,7 @@ A [model](models.md) reads your list the same way it guards a new idea. If it is
 {% step %}
 ### We write a new recipe
 
-The recipe model treats your edited list like any other create. It names the drink, writes steps, sizes the glass, and estimates [nutrition](nutrition.md). We lock kitchen amounts, assign tags, and a second model reviews it once.
+The recipe model treats your edited list like any other create. It names the drink, writes steps, and sizes the glass. We lock kitchen amounts and assign tags from the list. [Nutrition](nutrition.md) follows on the drink page.
 
 The name has to be unique. This is not a copy with the same page. It is a new drink you own.
 {% endstep %}

@@ -36,11 +36,6 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
       <td>Quick ideas while you are still building the drink.</td>
     </tr>
     <tr>
-      <td>Review the recipe</td>
-      <td>GPT-4o mini</td>
-      <td>A second pair of eyes, without writing the whole recipe again.</td>
-    </tr>
-    <tr>
       <td>Take the photo</td>
       <td>Gemini Flash Image</td>
       <td>Good at still-life drink photos from a detailed description.</td>
@@ -87,10 +82,6 @@ Model IDs, as configured today:
     </tr>
     <tr>
       <td>Suggest ingredients</td>
-      <td>openai/gpt-4o-mini</td>
-    </tr>
-    <tr>
-      <td>Review the recipe</td>
       <td>openai/gpt-4o-mini</td>
     </tr>
     <tr>
