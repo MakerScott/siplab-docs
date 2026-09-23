@@ -23,12 +23,12 @@ Signed-in users can remix a drink into a new public recipe, or type a short requ
 
 This site explains how that path works. It is not an in-app help center and it is not an API reference.
 
-Current pages:
+Current pages, in sidebar order:
 - **How It Works** (`README.md`) — the path from idea to a drink you can make
+- **Remix** (`remix.md`) — Remix vs Make it yours
 - **Suggestions** (`suggestions.md`) — how Try adding chips work in Create and Remix
 - **Nutrition** (`nutrition.md`) — how the panel is built and what it means
 - **Tags** (`tags.md`) — how chips are assigned and how you filter with them
-- **Remix** (`remix.md`) — Remix vs Make it yours
 - **Photos** (`photos.md`) — how the still is painted from the recipe
 - **Videos** (`video.md`) — how a clip is made, and when a drink does not get one
 - **Models** (`models.md`) — which model does each job

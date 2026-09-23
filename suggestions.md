@@ -17,7 +17,6 @@ The same chips appear when you [create](README.md) a drink and when you [remix](
       <th></th>
       <th>Create</th>
       <th>Remix</th>
-      <th>Make it yours</th>
     </tr>
   </thead>
   <tbody>
@@ -25,19 +24,16 @@ The same chips appear when you [create](README.md) a drink and when you [remix](
       <td>Where</td>
       <td>Under <strong>Describe your drink</strong>, after you pick a category</td>
       <td>Under <strong>Edit the ingredients</strong> on <strong>Remix This Drink</strong></td>
-      <td>A short request under the ingredient list</td>
     </tr>
     <tr>
       <td>What the chips see</td>
       <td>An empty box, or whatever you have typed</td>
       <td>This drink’s ingredients, plus anything you add</td>
-      <td>No chips. You type the change yourself.</td>
     </tr>
     <tr>
       <td>Category</td>
       <td>The one you just picked</td>
       <td>The category of the drink you started from</td>
-      <td>Stays the drink you are looking at</td>
     </tr>
   </tbody>
 </table>
