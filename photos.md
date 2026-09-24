@@ -90,7 +90,7 @@ Kitchen tools stay in the far blur and appear once. Anything that holds an ingre
     <tr>
       <td>Camera</td>
       <td>High enough to see the open rim and the liquid</td>
-      <td>Tight close-up, slight angle</td>
+      <td>Level close-up, glass standing upright</td>
     </tr>
   </tbody>
 </table>

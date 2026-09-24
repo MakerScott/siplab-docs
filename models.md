@@ -17,8 +17,8 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
   <tbody>
     <tr>
       <td>Write the recipe</td>
-      <td>Claude Sonnet</td>
-      <td>Strong at turning a loose idea into a complete, structured recipe.</td>
+      <td>Claude Haiku</td>
+      <td>The fast Claude. It still writes a complete recipe with kitchen amounts.</td>
     </tr>
     <tr>
       <td>Estimate nutrition</td>
@@ -70,7 +70,7 @@ Model IDs, as configured today:
   <tbody>
     <tr>
       <td>Write the recipe</td>
-      <td>anthropic/claude-sonnet-5</td>
+      <td>anthropic/claude-haiku-4.5</td>
     </tr>
     <tr>
       <td>Estimate nutrition</td>
