@@ -35,7 +35,7 @@ You need an account for both. If you are not signed in, we keep what you typed a
     <tr>
       <td>What you get</td>
       <td>A new public drink under your name, with its own photo</td>
-      <td>A rewritten recipe on this screen. It is not saved over theirs.</td>
+      <td>A rewritten recipe on this screen. Save Drink keeps a copy under your name. Theirs stays as it was.</td>
     </tr>
     <tr>
       <td>Who can use it</td>
@@ -107,7 +107,7 @@ The rewritten list gets a new panel. Coffee and tea caffeine is counted the same
 {% endstep %}
 {% endstepper %}
 
-The original drink in the catalog is not overwritten. Refresh the page and theirs is still theirs. Use **Remix** if you want a public copy under your name.
+The original drink in the catalog is not overwritten. After the rewrite, **Edit** brings the request field back. **Save Drink** publishes the rewritten recipe under your name, then starts a photo and a new nutrition estimate. Refresh the original page and theirs is still theirs.
 {% endtab %}
 {% endtabs %}
 
