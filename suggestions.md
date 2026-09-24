@@ -42,7 +42,7 @@ The same chips appear when you [create](README.md) a drink and when you [remix](
 
 Each chip is one short kitchen line, such as “1 cup oat milk” or “1 banana.” The amount stays on the chip. Milk is named by type, such as whole milk or oat milk. When a flavor is sold as more than one form, the chip names the form, such as ube syrup.
 
-You see up to five chips. On a phone, three show at a time. Tap one, and another idea can move into the open spot.
+You see up to six chips on a wide screen. On a phone, three show at a time. Tap one, and another idea can move into the open spot.
 
 The round button beside the chips asks for a new set. That set skips the chips already on screen. While a new set loads, the button spins.
 

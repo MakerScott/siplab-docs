@@ -120,6 +120,8 @@ Do not add a "What it does" / "How to use it" / "What to expect" / "Tips" skelet
   <table data-search="false">
   ```
 
+- Table cells cannot contain links. GitBook drops them. Put the link in the prose around the table.
+
 - Use a stepper for a real sequence of steps. Do not use Mermaid.
 - Use hint blocks instead of bold callouts:
   {% hint style="info" %}

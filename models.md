@@ -18,12 +18,12 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
     <tr>
       <td>Write the recipe</td>
       <td>Claude Haiku</td>
-      <td>The fast Claude. It still writes a complete recipe with kitchen amounts.</td>
+      <td>Fast enough to write a full recipe with kitchen amounts.</td>
     </tr>
     <tr>
       <td>Estimate nutrition</td>
       <td>Claude Sonnet</td>
-      <td>Same careful reasoning, with standard food references. See [Nutrition](nutrition.md).</td>
+      <td>Same careful reasoning, with standard food references.</td>
     </tr>
     <tr>
       <td>Check the idea</td>
@@ -43,7 +43,7 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
     <tr>
       <td>Make a video</td>
       <td>Seedance 2.0</td>
-      <td>Turns the finished photo into a short pour video. See [Videos](video.md).</td>
+      <td>Turns the finished photo into a short pour video.</td>
     </tr>
     <tr>
       <td>Read the recipe aloud</td>
@@ -57,6 +57,8 @@ No single model does everything. A stronger one writes the recipe. Smaller ones 
     </tr>
   </tbody>
 </table>
+
+How the panel is built is on [Nutrition](nutrition.md). How a clip is made is on [Videos](video.md).
 
 Model IDs, as configured today:
 

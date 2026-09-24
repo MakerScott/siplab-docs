@@ -4,7 +4,7 @@ icon: book-open
 
 # How It Works
 
-You describe a drink. We write a recipe you can make at home, with kitchen amounts, steps, tags, [nutrition](nutrition.md), and a [photo](photos.md). The recipe is public as soon as it is written. The photo shows up a moment later. Some drinks also get a short [video](video.md).
+You describe a drink. We write a recipe you can make at home, with kitchen amounts, steps, [tags](tags.md), [nutrition](nutrition.md), and a [photo](photos.md). The recipe is public as soon as it is written. The photo shows up a moment later. Some drinks also get a short [video](video.md).
 
 This page is the path from your idea to a drink you can make. The [models](models.md) that do each job are listed separately.
 
@@ -100,15 +100,15 @@ Every published drink has the same parts.
     </tr>
     <tr>
       <td>Tags</td>
-      <td>Assigned from the recipe and the panel. See [Tags](tags.md).</td>
+      <td>Assigned from the recipe and the panel.</td>
     </tr>
     <tr>
       <td>Nutrition</td>
-      <td>An estimate for one serving. See [Nutrition](nutrition.md).</td>
+      <td>An estimate for one serving.</td>
     </tr>
     <tr>
       <td>Photo</td>
-      <td>A still of the finished drink. See [Photos](photos.md). Some drinks also get a short [video](video.md).</td>
+      <td>A still of the finished drink. Some drinks also get a short video.</td>
     </tr>
   </tbody>
 </table>
